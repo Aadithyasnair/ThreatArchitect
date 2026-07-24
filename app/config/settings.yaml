@@ -1,0 +1,40 @@
+database:
+  db_path: threat_architect.db
+detection:
+  anomaly_threshold: 0.65
+  model_dir: models
+  stride_seconds: 2
+  window_size_seconds: 10
+logging:
+  file_path: threat_architect.log
+  level: INFO
+network:
+  animation_speed: 1.0
+  capture_interface: eth0
+  mininet_ip: 127.0.0.1
+  mininet_port: 8000
+ollama:
+  host: localhost
+  model: llama3.2:latest
+  port: 11434
+  timeout_seconds: 5.0
+simulation:
+  animation_duration_ms: 900
+  default_topology: enterprise_default
+  packet_speed_ms: 800
+  refresh_interval_ms: 2000
+theme:
+  active: dark
+  palette:
+    background: '#0B1220'
+    border: '#2A364F'
+    green: '#22C55E'
+    hover: '#1D2A44'
+    primary_accent: '#4F8EF7'
+    red: '#EF4444'
+    surface: '#151E2F'
+    text: '#F8FAFC'
+    yellow: '#FACC15'
+thresholds:
+  anomaly_score_limit: 0.85
+  classifier_confidence_limit: 0.75

@@ -1,0 +1,51 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Test / build artifacts
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+.eggs/
+htmlcov/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# App runtime files (do not commit — generated at runtime)
+*.db
+*.log
+threat_architect.db
+threat_architect.log
+
+# Model weights / large binary assets (Phase 4+)
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.h5
+models/
+
+# PCAP captures (Phase 3+)
+*.pcap
+*.pcapng
+captures/
+
+#Personal Documentation
+INTERNSHIP_PROJECT_REPORT.md
